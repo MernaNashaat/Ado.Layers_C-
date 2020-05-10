@@ -1,0 +1,14 @@
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.csprojAssemblyReference.cache
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.Properties.Resources.resources
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.csproj.GenerateResource.cache
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.csproj.CoreCompileInputs.cache
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\bin\Debug\User_RoleProject.exe.config
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\bin\Debug\User_RoleProject.exe
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\bin\Debug\User_RoleProject.pdb
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.exe
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.pdb
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.Regestration.resources
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.Countries_Cities.resources
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.AddRole.resources
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.StartForm.resources
+C:\Users\Merna Nashaat\source\repos\User_RoleProject\User_RoleProject\obj\Debug\User_RoleProject.Search_For_Role.resources

@@ -1,0 +1,156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B8D2B9BE-6B2C-4B54-B937-DE234E756BE4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>User_RoleProject</RootNamespace>
+    <AssemblyName>User_RoleProject</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\AddRole.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AddRole.Designer.cs">
+      <DependentUpon>AddRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\CityBLL.cs" />
+    <Compile Include="BLL\CountryBLL.cs" />
+    <Compile Include="BLL\GenericConvertDataTableToList.cs" />
+    <Compile Include="BLL\RoleBLL.cs" />
+    <Compile Include="BLL\UserBLL.cs" />
+    <Compile Include="Forms\Countries_Cities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Countries_Cities.Designer.cs">
+      <DependentUpon>Countries_Cities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\CityDAL.cs" />
+    <Compile Include="DAL\CountryDAL.cs" />
+    <Compile Include="DAL\RoleDAL.cs" />
+    <Compile Include="DAL\UserDAL.cs" />
+    <Compile Include="DBL\DBL.cs" />
+    <Compile Include="Entities\City.cs" />
+    <Compile Include="Entities\Country.cs" />
+    <Compile Include="Entities\Role.cs" />
+    <Compile Include="Entities\User.cs" />
+    <Compile Include="Forms\Regestration.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Regestration.Designer.cs">
+      <DependentUpon>Regestration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Forms\Search For Role.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Search For Role.Designer.cs">
+      <DependentUpon>Search For Role.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SL\CitySL.cs" />
+    <Compile Include="SL\CountrySL.cs" />
+    <Compile Include="SL\RoleAttribute.cs" />
+    <Compile Include="SL\RoleEnum.cs" />
+    <Compile Include="SL\RoleSL.cs" />
+    <Compile Include="SL\UserSL.cs" />
+    <Compile Include="Forms\StartForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\StartForm.Designer.cs">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User_RoleDBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>User_RoleDBDataSet.xsd</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\AddRole.resx">
+      <DependentUpon>AddRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Countries_Cities.resx">
+      <DependentUpon>Countries_Cities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Regestration.resx">
+      <DependentUpon>Regestration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\Search For Role.resx">
+      <DependentUpon>Search For Role.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\StartForm.resx">
+      <DependentUpon>StartForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="User_RoleDBDataSet.xsc">
+      <DependentUpon>User_RoleDBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="User_RoleDBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>User_RoleDBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="User_RoleDBDataSet.xss">
+      <DependentUpon>User_RoleDBDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
